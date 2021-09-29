@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies.com</title>
+    <link rel="stylesheet" href="movies.com.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="main-header">
+            <div class="main-title">MOVIES</div>
+            <nav class="navigation">
+                <a href="#" class="top-nav">HOME</a>
+                <a href="#" class="top-nav">ABOUT</a>
+                <a href="#" class="top-nav">MOST POPULAR</a>
+                <a href="#" class="top-nav">NEWS</a>
+                <a href="#" class="top-nav">CONTACTS</a>
+                <a href="#" class="top-nav"></a>
+            </nav>
+        </header>
+
+        <nav class="types-of-movies">
+            <div class="nav-content">
+                <a href="#" class="cinema-movies">CINEMA MOVIES</a>
+                <a href="#" class="tv-series">TV SERIES</a>
+                <a href="#" class="cartoons">CARTOONS</a>
+                <a href="#" class="anime">ANIME</a>
+                <a href="#" class="new-movies">NEW MOVIES</a>
+                <a href="#" class="hd-movies">HD MOVIES</a>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="featured-movie">
+                <img src="images/exmachina.jpg" alt="unavailable" class="featured">
+                <div class="movie-title img">Ex Machina</div>
+                <div class="movie-description img">To erase the line between man and maching is to obscure the line
+                    between man and gods
+                </div>
+                <div class="buttons img">
+                    <a href="#" class="learn-more img">LEARN MORE</a>
+                    <a href="#" class="watch-trailer img">WATCH TRAILER</a>
+                </div>
+                <div class="movie-sub">
+                    <img src="images/movie-sub.jpg" alt="war" class="movie-sub sub1">
+                    <img src="images/movie-sub.webp" alt="venom" class="movie-sub sub2">
+                    <img src="images/exmachina.jpg" alt="ex-machina" class="movie-sub sub3">
+                </div>
+            </div>
+
+            <form class="movie-genres" action="">
+                <div class="genre-title">Watch your favorite movies online</div>
+                <div class="movies-definition">A film, also called a movie or motion picture, is a series of still
+                    images on
+                    a strip of plastic which, when run through a projector and shown on a screen, creates the illusion
+                    of
+                    moving images. A film is created by photographing actual scenes with a motion picture camera; by
+                    photographing drawings or miniature models using traditional animation techniques; by means of CGI
+                    (Computer-generated imagery) and computer animation; or by a combination of some or all of these
+                    techniques and other visual effects. The process of filmmaking is both an art and an industry.</div>
+                <div class="movie-genres container">
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="action" name="action" value="action">
+                        <label for="action" class="item">Action</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="adventure" name="adventure" value="adventure">
+                        <label for="adventure" class="item">Adventure</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="animation" name="animation" value="animation">
+                        <label for="animation" class="item">Animation</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="biography" name="biography" value="biography">
+                        <label for="biography" class="item">Biography</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="comedy" name="comedy" value="comedy">
+                        <label for="comedy" class="item">Comedy</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="crime" name="crime" value="crime">
+                        <label for="crime" class="item">Crime</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="documentary" name="documentary" value="documentary">
+                        <label for="documentary" class="item">Documentary</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="drama" name="drama" value="drama">
+                        <label for="drama" class="item">Drama</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="family" name="family" value="family">
+                        <label for="family" class="item">Family</label>
+                    </div>
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="fantasy" name="fantasy" value="fantasy">
+                        <label for="fantasy" class="item">Fantasy</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="game-show" name="game-show" value="game-show">
+                        <label for="game-show" class="item">Game-show</label>
+                    </div>
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="history" name="history" value="history">
+                        <label for="history" class="item">History</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="horror" name="horror" value="horror">
+                        <label for="horror" class="item">Horror</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="kids" name="kids" value="kids">
+                        <label for="kids" class="item">Kids</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="music" name="music" value="music">
+                        <label for="music" class="item">Music</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="musical" name="musical" value="musical">
+                        <label for="musical" class="item">Musical</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="mystery" name="mystery" value="mystery">
+                        <label for="mystery" class="item">Mystery</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="news" name="news" value="news">
+                        <label for="news" class="item">News</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="romance" name="romance" value="romance">
+                        <label for="romance" class="item">Romance</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="sci-fi" name="sci-fi" value="sci-fi">
+                        <label for="sci-fi" class="item">Sci-fi</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="short" name="short" value="short">
+                        <label for="short" class="item">Short</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="sport" name="sport" value="sport">
+                        <label for="sport" class="item">Sport</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="thriller" name="thriller" value="thriller">
+                        <label for="thriller" class="item">Thriller</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="war" name="war" value="war">
+                        <label for="war" class="item">War</label>
+                    </div>
+
+                    <div class="item">
+                        <span class="item-box"></span>
+                        <input type="checkbox" class="item-box" id="western" name="western" value="western">
+                        <label for="western" class="item">Western</label>
+                    </div>
+                </div>
+
+                <input type="submit" value="SEARCH" class="movie-search">
+            </form>
+
+            <div class="more-movies">
+                <header class="more-movies">More movies</header>
+                <div class="container-more">
+                    <div class="movie-whole">
+                        <div class="img-wrapper"><img class="movie-poster" src="images/first-movie.webp" alt="unavailable"></div>                    
+                        <div class="movie">Admiring The Light</div>
+                        <div class="movie-year">2015</div>
+                    </div>
+
+                    <div class="movie-whole">
+                        <div class="img-wrapper"><img class="movie-poster" src="images/second-movie.jpg" alt="unavailable"></div>                       
+                        <div class="movie">Battling In The Apocolypse</div>
+                        <div class="movie-year">2017</div>
+                    </div>
+
+                    <div class="movie-whole">
+                        <div class="img-wrapper"><img class="movie-poster" src="images/third-movie.webp" alt="unavailable"></div>                  
+                        <div class="movie"> Taste Of The Abomination</div>
+                        <div class="movie-year">2005</div>
+                    </div>
+
+                    <div class="movie-whole">
+                        <div class="img-wrapper"><img class="movie-poster" src="images/fourth-movie.jpg" alt="unavailable"></div>                     
+                        <div class="movie">Question The Commander</div>
+                        <div class="movie-year">2016</div>
+                    </div>
+
+                    <div class="movie-whole">
+                        <div class="img-wrapper"><img class="movie-poster" src="images/fifth-movie.jpg" alt="unavailable"></div>                 
+                        <div class="movie"> Separated By The Nation</div>
+                        <div class="movie-year">2019</div>
+                    </div>
+
+                    <div class="movie-whole">
+                        <div class="img-wrapper"><img class="movie-poster" src="images/seventh-movie.webp" alt="unavailable"></div>                      
+                        <div class="movie"> Welcome To The Jungle</div>
+                        <div class="movie-year">2000</div>
+                    </div>
+
+                    <div class="movie-whole">
+                        <div class="img-wrapper"><img class="movie-poster" src="images/eight-movie.jpg" alt="unavailable"></div>                    
+                        <div class="movie">Delaying The Ocean</div>
+                        <div class="movie-year">2013</div>
+                    </div>
+
+                    <div class="movie-whole">
+                        <div class="img-wrapper"><img class="movie-poster" src="images/ninth-movie.jpg" alt="unavailable"></div>                    
+                        <div class="movie">Future is Bright</div>
+                        <div class="movie-year">2021</div>
+                    </div>
+                </div>
+
+                <div class="button-view-more">
+                    <button class="view-more">VIEW MORE</button>
+                </div>
+
+            </div>
+
+            <div class="testimonials">
+                <div class="testimonials-header">Testimonials</div>
+                <img src="images/fan.jpg" alt="fan" class="the-mask">
+                <div class="fan">Mask J. </div>
+                <div class="movie-fan">Movie fan</div>
+                <div class="fan-review">"Hold me closer, Ed, it's getting dark...
+                    Tell Auntie Em to let Old Yeller out... ...tell Tiny Tim I won't be coming home this
+                    Christmas...tell Scarlett I do give a damn!
+                    Thank you! You love me! You really love me!…"
+                </div>
+            </div>
+
+            <form class="mail" action="" autocomplete="on">
+                <header class="mail">Mail us</header>
+                <div class="combinator">
+                    <div class="client-info">
+                        <input type="text" name="name" id="name" class="mail-box">
+                        <label for="name" class="mail-box">Your Name</label>
+                    </div>
+                    <div class="client-info">
+                        <input type="email" name="email" id="email" class="mail-box">
+                        <label for="email" class="mail-box">Your Email</label>
+                    </div>
+
+                </div>
+                <div class="alone-message">
+                    <input type="text" name="message" id="message" class="mail-box">
+                    <label for="message" class="mail-box">Your Message</label>
+
+                </div>
+
+                <input type="submit" value="SEND" class="mail-send">
+            </form>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23467.667876889685!2d23.2781873!3d42.6728295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbg!4v1610107056582!5m2!1sen!2sbg"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+
+        <footer class="last">
+            <div class="grey">Movies &copy; 2015 Privacy Policy</div>
+
+            <div>Questions? Call Us Toll Free: (012) 123-456-7890</div>
+
+            <div class="icon-container">
+                <div class="social-icon">
+                    <a href="https://google.com" target="_blank">
+                        <img src="images/google plus icon.png" alt="facebook">
+                    </a>
+                </div>
+                <div class="social-icon">
+                    <a href="https://pinterest.com" target="_blank">
+                        <img src="images/pinterest icon.webp" alt="pinterest">
+                    </a>
+                </div>
+    
+                <div class="social-icon">
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="images/twitter icon.webp" alt="twitter">
+                    </a>
+                </div>
+    
+                <div class="social-icon">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="images/facebook icon.webp" alt="facebook">
+                    </a>
+                </div>
+    
+                <div class="social-icon">
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="images/instagram icon.webp" alt="instagram">
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-us">
+                <a href="">Contact us!</a>
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>

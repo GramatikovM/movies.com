@@ -1,0 +1,714 @@
+body {
+    margin: 0;
+}
+
+div.wrapper {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header.main-header {
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    height: 5em;
+    width: 100%;
+    background-color: rgb(16, 17, 17);
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 5vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+div.main-title {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+a.top-nav {
+    color: white;
+    text-decoration: none;
+}
+
+div.nav-content>a {
+    color: white;
+    text-decoration: none;
+}
+
+nav.navigation {
+    width: 32em;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+nav.types-of-movies {
+    position: relative;
+    top: 5em;
+    z-index: 4;
+    background-color: rgba(247, 59, 76, 1);
+    color: white;
+    padding-left: 15vw;
+    padding-right: 5vw;
+}
+
+div.nav-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5.5em;
+    width: 90%;
+    font-size: 110%;
+    font-weight: 600;
+}
+
+div.featured-movie {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50em;
+    background-color: rgba(31, 35, 36, 1);
+}
+
+img.featured {
+    position: absolute;
+    height: 50em;
+    width: 100%;
+    object-fit: fill;
+}
+
+div.movie-title.img {
+    /* position:absolute;
+    top:35%;
+    left:50%; */
+    margin: 1em;
+    z-index: 10;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* this is probably done with background image and opacity
+but there is no time to start over :D */
+
+div.movie-description.img {
+    /* position: absolute;
+    top:45%;
+    left:40%; */
+    z-index: 10;
+    margin-bottom: 1.5em;
+    width: 27em;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+div.img {
+    color: ivory;
+}
+
+a.img {
+    color: ivory;
+    text-decoration: none;
+}
+
+div.buttons.img {
+    z-index: 10;
+    display: flex;
+}
+
+a.learn-more {
+    /* position:absolute;
+    top:60%;
+    left:49%; */
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5em;
+    width: 10.5em;
+    margin-right: 0.2em;
+    border: 1px solid white;
+    border-radius: 1.5em;
+}
+
+a.watch-trailer {
+    /* position:absolute;
+    top:60%;
+    left:57%; */
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5em;
+    width: 10.5em;
+    border: 1px solid white;
+    border-radius: 1.5em;
+}
+
+div.movie-sub {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    bottom: 0;
+    right: auto;
+}
+
+img.movie-sub.sub1 {
+    z-index: 20;
+    height: 10em;
+    width: 20em;
+    cursor: pointer;
+}
+
+img.movie-sub.sub2 {
+    z-index: 20;
+    height: 10em;
+    width: 20em;
+    cursor: pointer;
+}
+
+img.movie-sub.sub3 {
+    z-index: 20;
+    height: 12.5em;
+    width: 20em;
+    cursor: pointer;
+}
+
+form.movie-genres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/Background.htm);
+    color: white;
+}
+
+div.genre-title {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+div.movies-definition {
+    text-align: center;
+    height: 5em;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+div.movie-genres.container {
+    margin: 2em;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 0.5em;
+    grid-column-gap: 3em;
+}
+
+div.item {
+    position: relative;
+}
+
+input.item-box:hover {
+    cursor: pointer;
+}
+
+label.item:hover {
+    cursor: pointer;
+}
+
+input.item-box {
+    opacity: 0;
+}
+
+span.item-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1em;
+    height: 1em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1em;
+    border-color: grey;
+}
+
+input.item-box:checked+label {
+    color: springgreen;
+}
+
+.movie-search {
+    height: 3.5em;
+    width: 10.5em;
+    margin-bottom: 2em;
+    border-radius: 2em;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    border-width: 1px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+div.more-movies {
+    background-color: rgba(31, 35, 36, 1);
+    color: white;
+}
+
+header.more-movies {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 1em;
+}
+
+div.container-more {
+    margin-left: 9em;
+    margin-right: 9em;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.movie-whole {
+    margin: 1.5em;
+}
+
+div.img-wrapper {
+    overflow: hidden;
+}
+
+img.movie-poster {
+    width: 15vw;
+    height: 22em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+img.movie-poster:hover {
+    transform: scale(1.5);
+}
+
+div.movie {
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+}
+
+div.movie:hover {
+    color: salmon;
+}
+
+div.movie-year {
+    text-align: center;
+}
+
+div.button-view-more {
+    display: flex;
+    justify-content: center;
+}
+
+button.view-more {
+    height: 3.5em;
+    width: 10.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: white;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+div.testimonials {
+    height: 40em;
+    background-color: rgb(226, 88, 100);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.testimonials-header {
+    margin: 2em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+img.the-mask {
+    height: 15em;
+    width: 20em;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+div.fan {
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+div.movie-fan {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+div.fan-review {
+    width: 50em;
+    text-align: center;
+    margin: 3em;
+    font-weight: 600;
+}
+
+form.mail {
+    height: 40em;
+    background-color: rgba(31, 35, 36, 1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.mail {
+    margin: 2em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+div.combinator {
+    margin-bottom: 5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.client-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    order: -1;
+}
+
+div.alone-message {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+}
+
+input.mail-send {
+    height: 3.5em;
+    width: 11.5em;
+    margin-bottom: 10em;
+    color: white;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+input.mail-box {
+    border-style: solid;
+    border-width: 1px;
+    background-color: transparent;
+    color: white;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    width: 100%;
+}
+
+input.mail-box:focus+label.mail-box {
+    transform: translateY(-15px);
+    opacity: 0.5;
+    transition: all 0.2s ease-in;
+}
+
+label.mail-box {
+    order: -1;
+}
+
+iframe {
+    width: 100%;
+    height: 70vh;
+}
+
+footer.last {
+    position: relative;
+    height: 12em;
+    width: 100%;
+    background-color: rgba(31, 35, 36, 1);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.social-icon img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+div.grey {
+    color: gray;
+}
+
+div.icon-container {
+    height: 1.5em;
+    width: 12em;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.contact-us {
+    display: flex;
+    position: absolute;
+    background-color: rgb(93, 162, 226);
+    border-radius: 0.5em;
+    bottom: 0;
+    right: 1em;
+    height: 2.5em;
+    width: 15em;
+    align-items: center;
+}
+
+div.contact-us>a {
+    position: absolute;
+    left: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:1350px) and (min-width:1024px) {
+    div.container-more {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    img.movie-poster {
+        width: 17vw;
+        height: 17em;
+    }
+    div.movie-whole {
+        margin: 1em;
+    }
+    div.movie {
+        font-size: 0.85em;
+    }
+    div.movie-year {
+        font-size: 0.9em;
+    }
+    div.genre-title {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-size: 2em;
+        font-weight: 600;
+    }
+    div.movies-definition {
+        margin-bottom: 2em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    header.main-header {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    div.main-title {
+        font-size: 2em;
+        font-weight: 600;
+    }
+    nav.navigation {
+        width: 30em;
+    }
+    nav.types-of-movies {
+        padding-left: 5vw;
+        padding-right: 1vw;
+    }
+    div.nav-content {
+        width: 90%;
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+    img.featured {
+        height: 40em;
+    }
+    div.movie-title.img {
+        margin: 1em;
+        z-index: 10;
+        font-size: 1.7em;
+        font-weight: 600;
+    }
+    div.movie-description.img {
+        font-size: 1.1em;
+    }
+    a.learn-more {
+        height: 2.5em;
+        margin-right: 0.5em;
+        font-size: 0.8em;
+    }
+    a.watch-trailer {
+        height: 2.5em;
+        font-size: 0.8em;
+    }
+    img.movie-sub.sub1 {
+        width: 33.33%;
+    }
+    img.movie-sub.sub2 {
+        width: 33.33%;
+    }
+    img.movie-sub.sub3 {
+        width: 33.33%;
+    }
+    div.genre-title {
+        margin-top: 1em;
+        font-size: 1.8em;
+    }
+    div.movies-definition {
+        height: 5em;
+        margin-left: 5em;
+        margin-right: 5em;
+        font-size: 0.9em;
+    }
+    div.movie-genres.container {
+        margin: 4em;
+        grid-row-gap: 0.5em;
+        grid-column-gap: 3em;
+    }
+    header.more-movies {
+        font-size: 1.75em;
+    }
+    div.container-more {
+        height: max-content;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    div.movie-whole {
+        margin: 1.5em;
+    }
+    img.movie-poster {
+        width: 30vw;
+        height: 20em;
+    }
+    button.view-more {
+        height: 1.5em;
+        width: 10.5em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    footer.last {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    header.main-header {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 10em;
+        width: fit-content;
+    }
+    div.main-title {
+        font-size: 1.75em;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+    nav.navigation {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+    nav.types-of-movies {
+        top: 10em;
+    }
+    div.nav-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 15em;
+        width: 90%;
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+    img.movie-sub.sub1 {
+        width: 33.33%;
+    }
+    img.movie-sub.sub2 {
+        width: 33.33%;
+    }
+    img.movie-sub.sub3 {
+        width: 33.33%;
+    }
+    div.movie-title.img {
+        font-size: 1.5em;
+    }
+    div.movie-description.img {
+        font-size: 0.9em;
+    }
+    a.learn-more {
+        font-size: 0.75em;
+    }
+    a.watch-trailer {
+        font-size: 0.75em;
+    }
+    div.genre-title {
+        margin-top: 1em;
+        font-size: 1.25em;
+    }
+    div.movies-definition {
+        height: 15em;
+        margin-left: 5em;
+        margin-right: 5em;
+        font-size: 0.9em;
+    }
+    form.movie-genres {
+        height: fit-content;
+    }
+    div.movie-genres.container {
+        margin: 4em;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1em;
+        grid-column-gap: 3em;
+    }
+    header.more-movies {
+        font-size: 1.75em;
+    }
+    div.container-more {
+        height: max-content;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    div.movie-whole {
+        margin: 1.5em;
+    }
+    img.movie-poster {
+        width: 60vw;
+        height: 20em;
+    }
+    button.view-more {
+        height: 1.5em;
+        width: 10.5em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    div.fan-review {
+        height: 15em;
+        width: 15em;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    footer.last {
+        flex-direction: column;
+    }
+    div.contact-us {
+        display:none;
+    }
+}
